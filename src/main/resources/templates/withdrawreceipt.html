@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Banking Receipt</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .receipt-container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            max-width: 100px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+        .details {
+            margin-bottom: 20px;
+        }
+        .details p {
+            margin: 8px 0;
+            font-size: 14px;
+            color: #555;
+        }
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="receipt-container">
+        <div class="header">
+            
+            <h1>Banking App</h1>
+            <p>Transaction Receipt</p>
+        </div>
+        <div class="details">
+            <p><strong>Date:</strong>{{Date}}</p>
+            <p><strong>Account Holder:</strong> {{Name}}</p>
+            <p><strong>Account Number:</strong> {{AccountNumber}}</p>
+            <p><strong>Transaction Amount:</strong> {{TransactionAmount}}</p>
+            <p><strong>Description:</strong>Debited</p>
+            <p><strong>Status:</strong> Successfull</p>
+        </div>
+        <div class="footer">
+            <p>Thank you for banking with us.</p>
+            <p>This is an electronically generated receipt and does not require a signature.</p>
+        </div>
+    </div>
+</body>
+</html>
